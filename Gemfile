@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 # Use postgresql as the database for Active Record
@@ -39,3 +38,24 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+group :development, :test do
+  gem 'byebug', platform: :mri
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'rspec'
+  gem 'factory_girl_rails'
+  gem 'spork-rails', git: 'http://github.com/railstutorial/spork-rails.git'
+  gem 'guard-spork'
+  gem 'webmock'
+  gem 'shoulda-matchers'
+  gem 'database_cleaner'
+  gem 'guard-rubocop'
+  gem 'simplecov'
+  gem 'rubocop'
+  gem 'faker'
+  gem 'rails-controller-testing'
+  gem 'terminal-notifier-guard'
+  gem 'timecop'
+end
+
