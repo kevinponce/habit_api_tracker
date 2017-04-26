@@ -5,6 +5,15 @@ GIT
     spork-rails (3.2.1)
       spork (>= 1.0rc0)
 
+GIT
+  remote: https://github.com/kevinponce/kp_jwt_client.git
+  revision: dc72c4f3aa6bbdbff2a73fa90329e40d143f5bde
+  specs:
+    kp_jwt_client (0.1.0)
+      bcrypt (~> 3.1)
+      jwt (~> 1.5)
+      rails (~> 5.0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -49,6 +58,7 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     arel (7.1.4)
     ast (2.3.0)
+    bcrypt (3.1.11)
     builder (3.2.3)
     byebug (9.0.6)
     childprocess (0.6.3)
@@ -96,7 +106,11 @@ GEM
       spork (>= 0.8.4)
     hashdiff (0.3.2)
     i18n (0.8.1)
+    jbuilder (2.6.3)
+      activesupport (>= 3.0.0, < 5.2)
+      multi_json (~> 1.2)
     json (2.1.0)
+    jwt (1.5.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -111,6 +125,7 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
+    multi_json (1.12.1)
     nenv (0.3.0)
     nio4r (2.0.0)
     nokogiri (1.7.1)
@@ -241,6 +256,8 @@ DEPENDENCIES
   guard-rspec
   guard-rubocop
   guard-spork
+  jbuilder (~> 2.5)
+  kp_jwt_client!
   listen (~> 3.0.5)
   pg (~> 0.18)
   puma (~> 3.0)
